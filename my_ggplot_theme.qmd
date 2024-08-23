@@ -21,13 +21,13 @@ library(extrafont)
 
 ```{r}
 ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
-  geom_point() +
+  geom_point(color = "pink2") +
   labs(title = "Penguins!") +
-  theme(title = element_text(size = 16, color = "purple", family = "Segoe"),
-        plot.background = element_rect(fill = "black"),
-        panel.background = element_rect(fill = "gray20"),
+  theme(title = element_text(size = 16, color = "magenta"),
+        plot.background = element_rect(fill = "darkblue"),
+        panel.background = element_rect(fill = "gray40"),
         axis.text = element_text(color = "yellow"),
-        panel.grid.major = element_line(color = "blue"),
+        panel.grid.major = element_line(color = "lightblue"),
         panel.grid.minor = element_line(color = "cyan")
         )
 ```
