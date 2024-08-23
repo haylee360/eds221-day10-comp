@@ -32,3 +32,11 @@ ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
         )
 ```
 
+```{r}
+library(duckgoose)
+ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point(color = "pink2") +
+  labs(title = "Penguins!") +
+  theme_silly()
+```
+
